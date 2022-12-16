@@ -10,8 +10,8 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     
     <div id="app">
-        {{ message }}
-        <br>
+        <!-- {{ message }} -->
+        <!-- <br> -->
         {{artMedia[Math.floor(Math.random() * artMedia.length)].media}}
     </div>
 
@@ -22,7 +22,7 @@
         createApp({
             data() {
             return {
-                message: 'Hello Vue!',
+                // message: 'Hello Vue!',
                 artMedia: [
                     {media: 'Crayon'},
                     {media: 'Watercolors'},
