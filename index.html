@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     
     <div id="app">
-        <!-- {{ message }} -->
-        <!-- <br> -->
+        <h1>Art Media</h1>
+        <h2>What art medium should I use?</h2>
+        <br>
         {{artMedia[Math.floor(Math.random() * artMedia.length)].media}}
     </div>
 
@@ -22,12 +27,16 @@
         createApp({
             data() {
             return {
-                // message: 'Hello Vue!',
                 artMedia: [
                     {media: 'Crayon'},
-                    {media: 'Watercolors'},
+                    {media: 'Watercolor'},
                     {media: 'Oil Pastel'},
-                    {media: 'Pencils'},
+                    {media: 'Soft Pastel'},
+                    {media: 'Ink'},
+                    {media: 'Colored Pencil'},
+                    {media: 'Pen'},
+                    {media: 'Oil Paint'},
+                    {media: 'Pencil'},
                     {media: 'Acrylic'}
                 ]
             }
