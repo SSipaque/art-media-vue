@@ -1,3 +1,18 @@
+
+h1, h2, h4 {
+    text-align: center;
+}
 h1 {
     font-family: 'Rubik Vinyl', cursive;
+    font-size: 2.5rem;
+    margin: 5rem 0 0 0 ;
+}
+h2 {
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.5rem;
+    margin: 3rem 0 0 0 ;
+}
+h4{
+    font-family: 'Arimo', sans-serif;
+    margin: 3rem 0 0 0 ;
 }
