@@ -18,10 +18,11 @@
         <h1>Art Media</h1>
         <h2>What art medium should I use?</h2>
         <br>
-        <h4>{{artMedia[Math.floor(Math.random() * artMedia.length)].media}}</h4>
+        <h4 :key="componentKey">{{artMedia[Math.floor(Math.random() * artMedia.length)].media}}</h4>
         <br>
+        <!-- <span v-html="randomMedium"></span> -->
         <!-- <h4>{{artMedia[Math.floor(Math.random() * artMedia.length)].media}}</h4> -->
-        <button @click="">Go Again</button>
+        <button @click="newMedium">Go Again</button>
     </div>
 
 
@@ -31,6 +32,8 @@
         createApp({
             data() {
             return {
+                // randomMedium: '<h4 v-html="artMedia[Math.floor(Math.random() * artMedia.length)].media"></h4>',
+                componentKey: 0,
                 artMedia: [
                     {media: 'Crayon'},
                     {media: 'Watercolor'},
@@ -50,7 +53,13 @@
                     {media: 'Acrylic'},
                 ]
             }
-            }
+            },
+             methods: {
+        newMedium() {
+        // this.randomMedium = '<h4 style="color: red;" v-html="artMedia[Math.floor(Math.random() * artMedia.length)].media"></h4>';
+        this.componentKey += 1; //This lets Vue know to re-render the component
+        }
+    }
         }).mount('#app')
 </script>
 </body>
