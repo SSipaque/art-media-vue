@@ -12,8 +12,13 @@ h2 {
     font-size: 1.5rem;
     margin: 3rem 0 0 0 ;
 }
-h4{
+h4 {
     font-family: 'Arimo', sans-serif;
     font-size: 1.3rem;
     margin: 3rem 0 0 0 ;
+}
+
+button {
+    text-align: center;
+    margin: 3rem 48% 0 48%;
 }
