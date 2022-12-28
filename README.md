@@ -24,7 +24,7 @@
                        \/__/         \/__/         \/__/         \/__/       \/__/    
 
 
-  This is a single page site that selects a random art medium for artists who are unsure of what medium to use.
-It uses Vue.js, HTML, and CSS as well for styling. 
+  This is a simple minimalist single page site that selects a random art medium for artists who are unsure of what medium to use.
+It uses Vue.js, HTML, and CSS. 
   
   ⇨ This is a work in progress, it is not done yet.
