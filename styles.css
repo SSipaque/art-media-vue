@@ -1,3 +1,9 @@
+* {
+    /* Color Variables */
+    ---grey: #9FB0BF;
+    ---orange: #F27405;
+    ---white: #F0F2F2;
+}
 
 h1, h2, h4 {
     text-align: center;
@@ -12,10 +18,18 @@ h2 {
     font-size: 1.5rem;
     margin: 3rem 0 0 0 ;
 }
+#responseContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 h4 {
     font-family: 'Arimo', sans-serif;
     font-size: 1.3rem;
-    margin: 3rem 0 0 0 ;
+    min-width: 15rem;
+    /* margin: 3rem 0 0 0 ; */
+    border: 0.3rem solid var(---grey);
+    padding: 1rem;
 }
 
 button {

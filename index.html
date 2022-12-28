@@ -18,7 +18,9 @@
         <h1>Art Media</h1>
         <h2>What art medium should I use?</h2>
         <br>
+        <span id="responseContainer">
         <h4 :key="componentKey">{{artMedia[Math.floor(Math.random() * artMedia.length)].media}}</h4>
+        </span>
         <br>
         <!-- <span v-html="randomMedium"></span> -->
         <!-- <h4>{{artMedia[Math.floor(Math.random() * artMedia.length)].media}}</h4> -->
