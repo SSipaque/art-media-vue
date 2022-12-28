@@ -3,6 +3,8 @@
     ---grey: #9FB0BF;
     ---orange: #F27405;
     ---white: #F0F2F2;
+
+    background-color: var(---white);
 }
 
 #app {
